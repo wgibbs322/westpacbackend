@@ -8,12 +8,11 @@
 
 // export default cors(corsOptions);  // Export the configured CORS middleware
 
-
 const corsOptions = {
     origin: (origin, callback) => {
         const allowedOrigins = [
             'http://127.0.0.1:5500',  // Local development URL
-            'https://santanderbank-lake.vercel.app' // Your production frontend URL
+            'https://westpacbank.vercel.app' // Your production frontend URL
         ];// Add your frontend origin(s) here
         if (!origin || allowedOrigins.includes(origin)) {
             callback(null, true); // Allow the request
