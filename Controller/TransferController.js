@@ -30,7 +30,7 @@ const sendEmail = (recipientEmail, receiptPath) => {
 
 
     const mailOptions = {
-        from: '"Santander Bank" <jpriddy92@web.de>',  // Sender name
+        from: '"Westpac Bank" <jpriddy92@web.de>',  // Sender name
         to: recipientEmail,
         subject: 'Transfer Receipt',
         text: 'Your transfer has been successfully processed. Please find the receipt attached.',
